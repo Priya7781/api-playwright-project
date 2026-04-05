@@ -28,7 +28,7 @@ app.put('/users/:id', (req, res) => {
         user.id === id ? { ...user, ...req.body } : user
     );
 
-    res.json({ message: 'updated from main branch' });
+    res.json({ message: 'User updated' });
 });
 
 // DELETE user
